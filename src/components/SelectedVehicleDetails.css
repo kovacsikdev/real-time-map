@@ -1,0 +1,46 @@
+.selected-vehicle-details {
+  position: fixed;
+  top: 50%;
+  left: -100%;
+  transform: translateY(-50%);
+  z-index: 100;
+  background-color: white;
+  transition: left 0.5s ease-in;
+  border: 1px solid #161b1d;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.selected-vehicle-details-visible {
+  left: 0;
+}
+
+.selected-vehicle-info {
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+@media (max-width: 480px) {
+  .selected-vehicle-details {
+    top: 0;
+    transform: translateY(0%);
+    width: 50vw;
+    height: 50vw;
+  }
+}
+
+@media (min-width: 480px) {
+  .selected-vehicle-details {
+    width: 35vw;
+    height: 35vw;
+  }
+}
+
+@media (min-width: 1200px) {
+  .selected-vehicle-details {
+    width: 25vw;
+    height: 25vw;
+  }
+}
