@@ -18,11 +18,10 @@ const RealTimeMap = () => {
   const [infoBoxType, setInfoBoxType] = useState<InfoBoxType>("");
 
   const env = import.meta.env.NODE_ENV;
-  console.log('app env', env)
   const apiKey =
-    env === "production"
-      ? import.meta.env.VITE_PUBLIC_MAP_API_KEY_PROD
-      : import.meta.env.VITE_PUBLIC_MAP_API_KEY_DEV;
+    env === "development"
+      ? import.meta.env.VITE_PUBLIC_MAP_API_KEY_DEV
+      : import.meta.env.VITE_PUBLIC_MAP_API_KEY_PROD;
 
   return (
     <>
