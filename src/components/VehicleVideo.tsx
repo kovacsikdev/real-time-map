@@ -34,7 +34,7 @@ export const VehicleVideo = (props: VehicleVideoProps) => {
       const url =
         env === "development"
           ? "/realtime_videos/"
-          : "https://github.com/kovacsikdev/portfolio/raw/refs/heads/main/out/realtime_videos/";
+          : "https://github.com/kovacsikdev/real-time-map/raw/refs/heads/main/assets/realtime_videos/";
       const video = realTimeVideoMap(selectedVehicleData.id);
       if (selectedVehicleData?.health?.overall === "good") {
         setVehicleVideoSrc(`${url}driving_${video?.driving || "1"}`);
