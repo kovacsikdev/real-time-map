@@ -9,10 +9,12 @@ A map displaying 20 vehicle locations and their status in real time. Built with 
 - Google Map navigation
 - Real time location updates for each vehicle
 - On click of a vehicle:
--- Map view follows vehicle
--- Renders vehicle route on map
--- Display vehicle status
--- Display vehicle dash cam video feed
+  - Map view follows vehicle
+  - Renders vehicle route on map
+  - Display vehicle status
+  - Display vehicle dash cam video feed
+
+![real-time-map](https://github.com/user-attachments/assets/f265754c-5b86-478e-aed5-85873680a97d)
 
 ## Technologies Used
 
